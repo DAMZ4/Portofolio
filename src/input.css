@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #221F1F;
+}
+
+.navbar-fixed{
+    @apply fixed z-[9999] bg-primary bg-opacity-30;
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-menu{
+    @apply w-[30px] h-[2px] my-2 block bg-white
+}
+
+.hamburger-active >span:nth-child(1) {
+    @apply  rotate-45;
+}
+
+.hamburger-active >span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active >span:nth-child(3) {
+    @apply  -rotate-45;
+}
+
+
+/* CSS for Skills Section */
+.skills {
+    background-color: #f3f4f6;
+}
+
+#skills h2 {
+    color: #333;
+}
+
+#skills .grid {
+    display: grid;
+}
+
+#skills .rounded-lg {
+    border-radius: 0.5rem;
+}
+
+#skills .shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills .p-6 {
+    padding: 1.5rem;
+}
+
+#skills .text-lg {
+    font-size: 1.25rem;
+}
+
+#skills .text-sm {
+    font-size: 0.875rem;
+}
+
+#skills .text-gray-700 {
+    color: #4b5563;
+}
+
+#skills .bg-white {
+    background-color: #ffffff;
+}
